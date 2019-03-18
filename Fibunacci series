@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n;
+	int y=0;
+	int x=1;
+	int i=1;
+	int z=0;
+	printf("input n:\n");
+	scanf("%i",&n);
+	printf("0, ");
+	while(i<=(n-1)){
+		z=y+x;
+		x=y;
+		y=z;
+		i++;
+		printf("%i, ",z);
+}
+system ("pause");
+}
