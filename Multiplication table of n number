@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+	int n;
+	int i=1;
+	do{
+		printf("Input a number between 1 and 12:\n");
+	scanf("%i",&n);}
+	while((n>12)||(n<1));
+	printf("the multiplicaion table for %i is\n",n);
+	while(i<=12){
+        printf("%d x %d = %d \n", n, i, n*i);
+		//printf("%i",n);
+        //printf("x");
+        //printf("%i",i);
+        //printf("=");
+        //printf("%i\n",n*i);
+        i++;
+
+}
+	system("pause");	
+	return 0;
+}
