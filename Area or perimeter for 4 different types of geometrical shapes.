@@ -1,0 +1,75 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	int ans;
+	float height;
+    float base;
+	float area;
+	float radio;
+	float side;
+	float perimeter;
+	float side2;
+	do{
+		printf("Which operation do you want to do?\n Press 1 triangles area\n press 2 for circles area\n press 3 for rectangles area\n press 4 for squares area\n");
+        printf("
+		Press 5 triangles perimeter\n press 6 for circles perimeter\n press 7 for rectangles perimeter\n press 8 for squares perimeter\n");
+		printf(" input answer:\n");
+		scanf("%i",&ans);}
+		while((ans<0)||(ans>8));
+		if(ans==1){
+			printf("Triangle area calculator\n input height:\n");
+			scanf("%f",&height);
+			printf("input base:\n");
+			scanf("%f",&base);
+			area=(base*height)/2;
+			printf("The Area is %f\n",area);}
+		 if(ans==2){
+            printf("Circle area calculator\n input radio:\n");
+			scanf("%f",&radio);
+			area=M_PI*pow(radio,2);
+			printf("The Area is %f\n",area);}
+		 if(ans==3){
+                printf("Rectangle area calculator\n input side:\n");
+				scanf("%f",&side);
+				printf("input side2:\n");
+				scanf("%f",&side2);
+				area=side*side2;
+				printf("The Area is %f\n",area);}
+		  if(ans==4){
+				printf("Square area calculator\n input side:\n");
+				scanf("%f",&side);
+				area=pow(side,2);
+				printf("The Area is %f\n",area);}
+		if(ans==5){
+			printf("Triangles perimeter calculator\n input side:\n");
+			scanf("%f",&side);
+			printf("Triangles perimeter calculator\n input side2:\n");
+			scanf("%f",&side2);
+			printf("input base:\n");
+			scanf("%f",&base);
+			perimeter=base+side+side2;
+			printf("The Perimeter is %f\n",perimeter);}
+		 if(ans==6){
+            printf("Circles perimeter calculator\n input radio:\n");
+			scanf("%f",&radio);
+			perimeter=M_PI*2*radio;
+			printf("The perimeter is %f\n",perimeter);}
+		 if(ans==7){
+                printf("Rectangles perimeter calculator\n input side:\n");
+				scanf("%f",&side);
+				printf("input side2:\n");
+				scanf("%f",&side2);
+				perimeter=2*(side+side2);
+				printf("The Perimeter is %f\n",perimeter);}
+		  if(ans==8){
+				printf("Squares perimeter calculator\n input side:\n");
+				scanf("%f",&side);
+				perimeter=4*side;
+				printf("The Perimeter is %f\n",perimeter);}
+	system("pause");	
+	return 0;
+}
