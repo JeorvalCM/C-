@@ -1,19 +1,18 @@
 #include <stdio.h>
+
 #include <stdlib.h>
 
-int main() 
-{
-	int i=1;
-	int x;
-	printf("The lap years are:\n");
-		while(x<=3000){
-			x=1999+i;
-			i++;
- 		if((x%4==0)&&(x%100!=0)||(x%400==00)){
-				printf("%i, ",x);
- }
- }
-	system("pause");	
-	return 0;
+int main() {
+  int i = 1;
+  int x;
+  printf("The lap years are:\n");
+  while (x <= 3000) {
+    x = 1999 + i;
+    i++;
+    if ((x % 4 == 0) && (x % 100 != 0) || (x % 400 == 00)) {
+      printf("%i, ", x);
+    }
+  }
+  system("pause");
+  return 0;
 }
- 
