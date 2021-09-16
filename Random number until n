@@ -1,19 +1,21 @@
 #include <stdio.h>
+
 #include <stdlib.h>
+
 #include <time.h>
 
-int main()
-{
-	int n;
-	int i;
-	printf("input a n number or press 0 to finish the program\n");
-	scanf("%i",&n);
-		while(n!=0){
-		srand(time(NULL));
-		i=0+rand()%((n-1)+1);
-		printf("random:%d\n",i);
-		printf("input a n number or press 0 to finish the program\n");
-		scanf("%i",&n);}
-	system("pause");
-	return 0;
+int main() {
+  int n;
+  int i;
+  printf("input a n number or press 0 to finish the program\n");
+  scanf("%i", & n);
+  while (n != 0) {
+    srand(time(NULL));
+    i = 0 + rand() % ((n - 1) + 1);
+    printf("random:%d\n", i);
+    printf("input a n number or press 0 to finish the program\n");
+    scanf("%i", & n);
+  }
+  system("pause");
+  return 0;
 }
