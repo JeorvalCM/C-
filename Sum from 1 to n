@@ -1,17 +1,18 @@
 #include <stdio.h>
+
 #include <stdlib.h>
-int main() 
-{
-	int i=1;
-	int n;
-	int x=0;
-	printf("Input a number:\n");
-	scanf("%i",&n);
-	while(i<=n){
-		x= x+i;
-		i++;
-	}
-	printf("The result is %i\n",x);
-	system("pause");	
-	return 0;
+
+int main() {
+  int i = 1;
+  int n;
+  int x = 0;
+  printf("Input a number:\n");
+  scanf("%i", & n);
+  while (i <= n) {
+    x = x + i;
+    i++;
+  }
+  printf("The result is %i\n", x);
+  system("pause");
+  return 0;
 }
